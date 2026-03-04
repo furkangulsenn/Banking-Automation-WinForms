@@ -1,0 +1,12 @@
+C:\Users\FURKAN\source\repos\BankApp\BankApp\bin\Debug\BankApp.exe.config
+C:\Users\FURKAN\source\repos\BankApp\BankApp\bin\Debug\BankApp.exe
+C:\Users\FURKAN\source\repos\BankApp\BankApp\bin\Debug\BankApp.pdb
+C:\Users\FURKAN\source\repos\BankApp\BankApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\FURKAN\source\repos\BankApp\BankApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\FURKAN\source\repos\BankApp\BankApp\obj\Debug\BankApp.csproj.AssemblyReference.cache
+C:\Users\FURKAN\source\repos\BankApp\BankApp\obj\Debug\BankApp.Properties.Resources.resources
+C:\Users\FURKAN\source\repos\BankApp\BankApp\obj\Debug\BankApp.csproj.GenerateResource.cache
+C:\Users\FURKAN\source\repos\BankApp\BankApp\obj\Debug\BankApp.csproj.CoreCompileInputs.cache
+C:\Users\FURKAN\source\repos\BankApp\BankApp\obj\Debug\BankApp.csproj.Up2Date
+C:\Users\FURKAN\source\repos\BankApp\BankApp\obj\Debug\BankApp.exe
+C:\Users\FURKAN\source\repos\BankApp\BankApp\obj\Debug\BankApp.pdb

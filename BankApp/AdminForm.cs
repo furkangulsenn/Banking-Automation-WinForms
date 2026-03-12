@@ -12,9 +12,10 @@ namespace BankApp
         TextBox txtAmount = new TextBox();
         Button btnCreate = new Button();
         Button btnAddMoney = new Button();
-
+        Button btnUsers = new Button();
         public AdminForm()
         {
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin Panel";
             Size = new Size(400, 300);
 
@@ -30,12 +31,29 @@ namespace BankApp
             btnAddMoney.SetBounds(50, 190, 200, 30);
             btnAddMoney.Click += AddMoney;
 
+            btnUsers.Text = "Users List";
+            btnUsers.SetBounds(50, 230, 200, 30);
+            btnUsers.Click += OpenUsers;
+
             Controls.AddRange(new Control[]
-            { txtUser, txtPass, txtAmount, btnCreate, btnAddMoney });
+            {
+                txtUser,
+                txtPass,
+                txtAmount,
+                btnCreate,
+                btnAddMoney,
+                btnUsers
+            });
         }
 
         private void CreateCustomer(object sender, EventArgs e)
         {
+            if (txtUser.Text.Trim() == "" || txtPass.Text.Trim() == "")
+            {
+                MessageBox.Show("Username ve Password boş olamaz");
+                return;
+            }
+
             using (var conn = Database.GetConnection())
             {
                 conn.Open();
@@ -75,6 +93,10 @@ namespace BankApp
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Money Added");
             }
+        }
+        void OpenUsers(object sender, EventArgs e)
+        {
+            new UsersForm().ShowDialog();
         }
     }
 }

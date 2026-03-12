@@ -13,6 +13,7 @@ namespace BankApp
 
         public LoginForm()
         {
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Bank Login";
             Size = new Size(300, 220);
 
